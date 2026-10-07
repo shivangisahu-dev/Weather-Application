@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="mainbox mainbox1">
+        <img src="./images/drizzle.png" />
+        <h1 id="weather">Weather</h1>
+        <h2 id="Forecasts">ForeCasts</h2>
+        <button id="Get-start">Get Start</button>
+      </div>
+      <div class="mainbox mainbox2 inactive">
+        <div class="searchbox">
+          <input type="text" placeholder="Enter your City" id="inputfield" />
+          <img src="./images/search (2).png" id="searching" />
+        </div>
+        <div class="imageicon">
+          <img id="weather_photo" src="./images/clear (1).png" />
+          <p id="desc" style="text-align:center;margin-bottom:10px">Description</p>
+        </div>
+        <div class="tempcal">
+          <h1 id="temp" style="text-align:center">0°c</h1>
+          <h2 id="cityName" style="margin-bottom:20px;color:gold">Enter City</h2>
+        </div>
+        <div class="extradetails">
+          <div class="winddetails">
+            <div class="windicon">
+              <img id="wind-image" src="./images/wind.png" />
+            </div>
+            <div class="winddata">
+              <p id="windcalculate" class="data">0 km/h</p>
+              <p class="data">wind</p>
+            </div>
+          </div>
+          <div class="humiditydetails">
+            <div class="humicon">
+              <img id="humidity-image" src="./images/humidity.png" />
+            </div>
+            <div class="humidetails">
+              <p id="humidity-calculate"class="info">0%</p>
+              <p class="info">humidity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainbox mainbox3 inactive">
+        <h1 id="error">404</h1>
+        <h3>Oops! Page Not Found</h3>
+        <p>The page you're looking for doesn't exist or has been moved</p>
+        <button id="Go">Go Home</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

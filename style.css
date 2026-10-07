@@ -1,0 +1,134 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-back-color-1:#9e7ddc;
+    --bg-back-color-2:#bc97d9;
+    --bg-box-color-1:#1a2344;
+    --bg-box-color-2:#8a4dad;
+    --color:#ffffff;
+    --gold-color:rgb(255,215,0);
+}
+body{
+    height:100vh;
+    width:100vw;
+    font-family:"Poppins";
+    background:linear-gradient(var(--bg-back-color-1),var(--bg-back-color-2));
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+main{
+    height:100%;
+    width:100%;
+    background:linear-gradient(var(--bg-back-color-1),var(--bg-back-color-2));
+    display:flex;
+    flex-direction: row;
+    justify-content:center; /*pehle space evenly krna fir bn jane ke bad center krna*/
+    align-items: center;
+}
+
+.mainbox{
+    height:500px;
+    width:350px;
+   background:linear-gradient(180deg,var(--bg-box-color-1),var(--bg-box-color-2));
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+   padding:20px;
+   color:var(--color);
+
+}
+
+#weather{
+    font-size:45px;
+    font-weight:bold;
+}
+
+#Forecasts{
+    font-size:48px;
+   
+    color:var(--gold-color)
+}
+ #Get-start{
+    background-color:var(--gold-color);
+    padding:10px 40px;
+    border-radius:20px;
+    border: none;
+    outline:none;
+    margin-top:15px;
+ }
+
+.middle{
+    padding:10px;
+}
+.extradetails,.winddetails{
+    display: flex;
+}
+
+#wind-image{
+    height:40px;
+    width:40px;
+    transform:translate(-80px,20px);
+    
+}
+.data{
+    transform:translate(-70px,20px);
+    font-weight:bold;
+}
+
+#humidity-image{
+    height:40px;
+    width:60px;
+    transform: translate(10px,20px);
+    
+}
+.info{
+    transform: translate(80px,-25px);
+    font-weight:bold;
+}
+
+#inputfield{
+    height:40px;
+    width:270px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    padding:10px;
+    transform:translateX(10px);
+
+}
+#searching{
+    height: 25px;
+    width:20px;
+    transform:translate(-25px,7px);
+
+}
+.searching:active{
+   height:27px;
+   width:24px;
+}
+ h1#error{
+    font-weight:900;
+
+}
+
+button#Go{
+    background-color:var(--gold-color);
+    border:none;
+    outline:none;
+    padding:10px 15px;
+    border-radius:20px;
+    
+}
+
+
+.inactive{
+    display:none;
+
+}
